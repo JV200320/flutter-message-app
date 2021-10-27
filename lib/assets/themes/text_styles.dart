@@ -37,5 +37,6 @@ class TextStyles {
     fontSize: 20,
     fontWeight: FontWeight.w400,
     color: Colors.white,
+    decoration: TextDecoration.none,
   );
 }

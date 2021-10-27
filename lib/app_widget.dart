@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_message_app/screens/home_page.dart';
 import 'package:flutter_message_app/screens/login_page.dart';
+import 'package:flutter_message_app/screens/splash_page.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);
@@ -14,8 +15,9 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: "/login",
+      initialRoute: "/splash",
       routes: {
+        "/splash": (context) => SplashPage(),
         "/login": (context) => LoginPage(),
         "/home": (context) => HomePage(),
       },
