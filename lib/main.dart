@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +10,8 @@ void main() async {
 }
 
 class AppFirebase extends StatefulWidget {
+  const AppFirebase({Key? key}) : super(key: key);
+
   @override
   _AppFirebaseState createState() => _AppFirebaseState();
 }
