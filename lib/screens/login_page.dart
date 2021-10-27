@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_message_app/assets/themes/app_colors.dart';
 import 'package:flutter_message_app/controllers/auth/login_controller.dart';
