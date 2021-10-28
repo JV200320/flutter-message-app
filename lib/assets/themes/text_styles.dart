@@ -3,10 +3,16 @@ import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class TextStyles {
-  static final messageBody = GoogleFonts.montserrat(
+  static final messageBodyBlack = GoogleFonts.montserrat(
     fontSize: 12,
     fontWeight: FontWeight.w400,
     color: Colors.black,
+  );
+
+  static final messageBodyWhite = GoogleFonts.montserrat(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: Colors.white,
   );
 
   static final messageAuthor = GoogleFonts.montserrat(
