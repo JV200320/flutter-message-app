@@ -5,7 +5,7 @@ import 'package:flutter_message_app/assets/themes/app_colors.dart';
 import 'package:flutter_message_app/assets/themes/text_styles.dart';
 import 'package:flutter_message_app/models/user_model.dart';
 
-PreferredSizeWidget? CustomAppBar(UserModel user) {
+PreferredSizeWidget CustomAppBar(UserModel user) {
   return PreferredSize(
     child: Container(
       decoration: BoxDecoration(
