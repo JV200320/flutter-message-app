@@ -17,9 +17,9 @@ class MessageController {
 
   Future<void> saveMessage() async {
     final instance = await SharedPreferences.getInstance();
-    final boletos = instance.getStringList("boletos") ?? <String>[];
-    boletos.add(message.toJson());
-    await instance.setStringList("boletos", boletos);
+    final messages = instance.getStringList("messages") ?? <String>[];
+    messages.add(message.toJson());
+    await instance.setStringList("messages", messages);
     return;
   }
 
