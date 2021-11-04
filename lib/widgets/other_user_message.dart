@@ -17,7 +17,7 @@ class OtherUserMessage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 8, bottom: 6),
             child: Text(
-              message.user.name,
+              message.user!.name,
               style: TextStyles.messageAuthor,
             ),
           ),
@@ -33,7 +33,7 @@ class OtherUserMessage extends StatelessWidget {
               horizontal: 16,
             ),
             child: Text(
-              message.text,
+              message.text!,
               style: TextStyles.messageBodyWhite,
             ),
           ),

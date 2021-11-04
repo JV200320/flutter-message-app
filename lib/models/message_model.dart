@@ -2,11 +2,11 @@ import 'dart:convert';
 import 'package:flutter_message_app/models/user_model.dart';
 
 class MessageModel {
-  UserModel user;
-  String text;
+  UserModel? user;
+  String? text;
   MessageModel({
-    required this.user,
-    required this.text,
+    this.user,
+    this.text,
   });
 
   MessageModel copyWith({
@@ -21,7 +21,7 @@ class MessageModel {
 
   Map<String, dynamic> toMap() {
     return {
-      'user': user.toMap(),
+      'user': user!.toMap(),
       'text': text,
     };
   }
@@ -41,7 +41,6 @@ class MessageModel {
   @override
   String toString() => 'MessageModel(user: $user, text: $text)';
 
-
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
@@ -50,5 +49,4 @@ class MessageModel {
 
   @override
   int get hashCode => user.hashCode ^ text.hashCode;
-
 }
